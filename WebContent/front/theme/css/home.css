@@ -108,10 +108,10 @@ body{min-width: 1200px; _width:expression(document.documentElement.clientWidth>1
 
 
 
-.BHeader {height:35px; line-height:35px; width:100%; background:#f5f5f5; border-bottom:1px solid #e7e5e5}
+.BHeader {height:45px; line-height:35px; width:100%; background:#f5f5f5; border-bottom:1px solid #e7e5e5}
 .BHeaderl {float:right;}
 .BHeaderl li {float:left; line-height:35px; padding:0 5px; }
-.BHeaderl li a {display:block;  color:#666; font-size:12px; padding:0 10px; }
+.BHeaderl li a {display:block;  color:#666; font-size:12px; padding:5px 10px; }
 .headerul {height:18px; color:#dfdbdb; width:1px; display:block; margin-top:2px; overflow:hidden;}
 .yHeader{width: 100%; border-bottom:3px solid #ea4949;}
 .yNavIndex{width: 1200px;margin:0 auto;height:35px;/*border-bottom: 2px solid #2d2d2d;*/position: relative;}
@@ -144,7 +144,7 @@ body{min-width: 1200px; _width:expression(document.documentElement.clientWidth>1
 .yMenuLCinList{overflow: hidden; width:689px; padding-top:40px;}
 
 .yMenuLCinLisi { opacity:0.9; background:#f7f6f6; width:90px; height:483px; text-align:left; padding-top:60px; padding-left:30px}
-.yMenuLCinLisi ul li a {font-size:13px; font-weight:100; padding-bottom:60px; display:block;}
+.yMenuLCinLisi ul li a {font-size:13px; font-weight:100; padding-bottom:35px; display:block;}
 .yMenuLCinLisi ul li a i {padding-right:20px;}
 
 .yMenuLCinList h3{position: relative;height: 20px;width: auto;margin: 25px auto 0;border-bottom: 1px solid #000;}
@@ -205,7 +205,7 @@ body{min-width: 1200px; _width:expression(document.documentElement.clientWidth>1
 .search-text {border-color:#ea4949; border-style:solid; border-width:2px 0 2px 2px; color:#666; float:left; font-size:14px;  height:24px; line-height:24px; margin-bottom:4px; outline:none; padding:4px;  width:454px;}
 .words-text a {color:#666; font-size:12px; float: left;  margin-right:15px; white-space: nowrap;}
 .words-text a:hover { color:#ea4949;}
-.header-cart {margin-right:22px; position:relative; z-index:1;}
+.header-cart {margin-left:10px; position:relative; z-index:1;margin-top:10px;}
 .header-logo  { width:322px;}
 .news-list    { width:306px;}
 .time-list    { width:894px; overflow:hidden;}
