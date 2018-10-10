@@ -657,13 +657,21 @@ body{min-width: 1200px; _width:expression(document.documentElement.clientWidth>1
 .pc-nav-title h3 { font-size:16px; padding:15px 0 8px 0;}
 .pc-nav-title h4 { font-size:14px; padding:15px 0 8px 0;}
 .pc-nav-digit ul li { width:147px; text-align:center; float:left; padding:40px 22px 0 22px}
-.pc-nav-digit ul li .digit1 a { width:147px; height:149px; display:block; }
-.pc-nav-digit ul li .digit2 a {  font-size:14px; padding-top:10px; display:block;}
+.pc-nav-digit ul li .digit1 a { width:147px; height:149px; display:block;}
+.pc-nav-digit ul li .digit2 a { font-size:14px; padding-top:10px; display:block;margin-top:15px;
+	margin-left:20px;
+	width:150px; 
+	white-space:nowrap; 
+	text-overflow:ellipsis; 
+	-o-text-overflow:ellipsis; 
+	overflow: hidden; }
 .pc-nav-digit-clear  {border:none;}
 .pc-nav-letter { border-bottom:1px solid #e0e0e0; padding:10px 20px; font-size:16px;}
 
 .pc-sorting { padding:20px 0;}
 .pc-sorting a { border:1px solid #cccccc; border-radius:3px; color:#214aa7; padding:5px 10px; display:block; margin-right:2px; float:left;}
+
+
 
 
 .aui-footer{
