@@ -9,7 +9,7 @@ import java.util.Date;
  * The persistent class for the orderdetail database table.
  * 
  */
- 
+  
 public class Orderdetail implements Serializable {
 	private static final long serialVersionUID = 1L;
 

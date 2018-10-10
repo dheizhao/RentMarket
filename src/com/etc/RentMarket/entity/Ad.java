@@ -4,10 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
   
-/**
- * The persistent class for the ad database table.
- * 
- */
+
 
 public class Ad implements Serializable {
 	private static final long serialVersionUID = 1L;

@@ -8,7 +8,7 @@ import javax.persistence.*;
  * The persistent class for the shoppingcart database table.
  * 
  */
- 
+  
 public class Shoppingcart implements Serializable {
 	private static final long serialVersionUID = 1L;
 

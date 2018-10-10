@@ -9,7 +9,7 @@ import java.util.Date;
  * The persistent class for the reevaluate database table.
  * 
  */
- 
+  
 public class Reevaluate implements Serializable {
 	private static final long serialVersionUID = 1L;
 

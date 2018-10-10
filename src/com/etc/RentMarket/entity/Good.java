@@ -8,7 +8,7 @@ import javax.persistence.*;
  * The persistent class for the goods database table.
  * 
  */
- 
+  
 public class Good implements Serializable {
 	private static final long serialVersionUID = 1L;
 
