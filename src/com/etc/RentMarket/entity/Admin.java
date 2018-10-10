@@ -2,7 +2,7 @@ package com.etc.RentMarket.entity;
 
 import java.io.Serializable;
 
-
+ 
 /**
  * The persistent class for the admin database table.
  * 

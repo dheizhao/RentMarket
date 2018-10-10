@@ -8,7 +8,7 @@ import javax.persistence.*;
  * The persistent class for the usersdetail database table.
  * 
  */
-
+ 
 public class Usersdetail implements Serializable {
 	private static final long serialVersionUID = 1L;
 

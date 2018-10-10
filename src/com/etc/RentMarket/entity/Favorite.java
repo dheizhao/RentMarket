@@ -9,7 +9,7 @@ import java.util.Date;
  * The persistent class for the favorite database table.
  * 
  */
-
+ 
 public class Favorite implements Serializable {
 	private static final long serialVersionUID = 1L;
 

@@ -6,7 +6,7 @@ import java.io.Serializable;
  * The persistent class for the users database table.
  * 
  */
-
+ 
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 

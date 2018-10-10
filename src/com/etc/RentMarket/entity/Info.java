@@ -9,7 +9,7 @@ import java.util.Date;
  * The persistent class for the info database table.
  * 
  */
-
+ 
 public class Info implements Serializable {
 	private static final long serialVersionUID = 1L;
 
