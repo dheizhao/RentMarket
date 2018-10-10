@@ -3,7 +3,7 @@ package com.etc.RentMarket.entity;
 import java.io.Serializable;
 import java.util.Date;
 
- 
+  
 /**
  * The persistent class for the ad database table.
  * 
