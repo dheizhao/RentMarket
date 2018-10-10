@@ -50,9 +50,8 @@
 										<label for="loginname" class="login-label name-label"></label>
 										<input type="text" name="loginname" id="loginname"
 											class="itxt" tabindex="1" autocomplete="off"
-											placeholder="邮箱/用户名/已验证手机">
-											<p id="notice0" class="hide" style="color: red;font-size: 15px;text-align: center;">用户名不能为空</p>
-											<span class="clear-btn" style="display: inline;"></span>
+											placeholder="邮箱/用户名/已验证手机"> <span class="clear-btn"
+											style="display: inline;"></span>
 									</div>
 									<!-- 密码输入框fore2 -->
 									<div id="entry" class="item item-fore2"
@@ -60,11 +59,17 @@
 										<label class="login-label pwd-label" for="nloginpwd"></label>
 										<input type="password" id="nloginpwd" name="nloginpwd"
 											class="itxt itxt-error" tabindex="2" autocomplete="off"
-											placeholder="密码"> 
-											<p id="notice1" class="hide" style="color: red;font-size: 15px;text-align: center;">用户名不能为空</p>
-											<span class="clear-btn" style="display: inline;"></span> <span class="capslock"
+											placeholder="密码"> <span class="clear-btn"
+											style="display: inline;"></span> <span class="capslock"
 											style="display: none;"> <b></b> 大小写锁定已打开
 										</span>
+									</div>
+									<!-- 图片验证码开始 fore3-->
+									<div id="o-authcode" class="item item-vcode item-fore3 hide ">
+										<input type="text" name="" id="authcode" class="itxt itxt02"
+											name="authcode" tabindex="3"> <input type="button"
+											id="code" class="verify-code"> <a href="javascript:;"
+											onclick='createCode();'>看不清换一张</a>
 									</div>
 									<!-- 自动登录开始fore4 -->
 									<div class="item item-fore4">
@@ -100,44 +105,54 @@
 
 										<!-- 引入 gt.js，既可以使用其中提供的 initGeetest 初始化函数 -->
 										<script src="gt.js"></script>
-										<script
-											src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
-										<script
-											src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
-										<script
-											src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
 										<script>
-											$().ready(function() {
-																$("#formlogin")
-																		.validate(
-																				{
-																					rules : {
-																						loginname : {
-																							required : true,
-																						},
-																						nloginpwd : {
-																							required : true,
-																							minlength : 6
-																						}
-																					},
-																					messages : {
-																						nloginpwd : {
-																							required : "请输入您的密码",
-																							minlength : "密码长度不能小于 6位数"
-																						},
-																						loginname : {
-																							required : "请输入您的登录名"
-																						}
-																					},
-																					submitHandler: function() { location.href ="index.html";}
-																				})
-
-															});
-
-										
 											var handler2 = function(captchaObj) {
-												
-	
+												$("#loginsubmit")
+														.click(
+																function(e) {
+																	var result = captchaObj
+																			.getValidate();
+																	if (!result) {
+																		$(
+																				"#notice2")
+																				.show();
+																		setTimeout(
+																				function() {
+																					$(
+																							"#notice2")
+																							.hide();
+																				},
+																				2000);
+																	} else {
+																		$
+																				.ajax({
+																					url : '../gt/ajax-validate2',
+																					type : 'POST',
+																					dataType : 'json',
+																					data : {
+																						username : $(
+																								'#loginname')
+																								.val(),
+																						password : $(
+																								'#nloginpwd')
+																								.val(),
+																						geetest_challenge : result.geetest_challenge,
+																						geetest_validate : result.geetest_validate,
+																						geetest_seccode : result.geetest_seccode
+																					},
+																					success : function(
+																							data) {
+																						if (data.status === 'success') {
+																							alert('登录成功');
+																						} else if (data.status === 'fail') {
+																							alert('登录失败');
+																						}
+																					}
+																				})
+																	}
+																	e
+																			.preventDefault();
+																});
 												// 将验证码加到id为captcha的元素里，同时会有三个input的值用于表单提交
 												captchaObj
 														.appendTo("#captcha2");
@@ -282,5 +297,14 @@
 			"display" : "none"
 		});
 	});
+	//确认输入用户名密码后，显示验证码
+	$("#nloginpwd").blur(function() {
+		if (($("#loginname").val() != "") && ($("#nloginpwd").val() != "")) {
+			$("#o-authcode").css({
+				"display" : "block"
+			});
+		}
+	})
+	createCode();
 </script>
 </html>

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html>
  <head>
@@ -28,7 +30,7 @@
 <section id="login-content">
     <div class="login-centre">
         <div class="login-switch clearfix">
-            <p class="fr">我已经注册，现在就 <a href="login.html">登录</a></p>
+            <p class="fr">我已经注册，现在就 <a href="login.jsp">登录</a></p>
         </div>
         <div class="login-back">
             <div class="H-over">
@@ -56,7 +58,7 @@
                     </div>
                     <div class="item-ifo">
                         <input type="checkbox" onClick="agreeonProtocol();" id="readme" checked="checked" class="checkbox">
-                        <label for="protocol">我已阅读并同意<a id="protocol" class="blue" href="#">《悦商城用户协议》</a></label>
+                        <label for="protocol">我已阅读并同意<a id="protocol" class="blue" href="#">《易点租城用户协议》</a></label>
                         <span class="clr"></span>
                     </div>
                     <div class="login-button">
@@ -83,8 +85,6 @@
                     <a href="">商家入驻</a>
                     |
                     <a href="">广告服务</a>
-                    |
-                    <a href="">手机京东</a>
                     |
                     <a href="">友情链接</a>
                     |

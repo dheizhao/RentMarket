@@ -9,33 +9,61 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"> 
 	<meta name="renderer" content="webkit">
 	<title>一级货架</title>
-    <link rel="shortcut icon" type="image/x-icon" href="theme/icon/logo.png">
+   	<link rel="shortcut icon" type="image/x-icon" href="theme/icon/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="theme/css/base.css">
 	<link rel="stylesheet" type="text/css" href="theme/css/home.css">
+	
+	<script type="text/javascript" src="theme/js/jquery.js"></script>
+	<script type="text/javascript" src="theme/js/index.js"></script>
+	<script type="text/javascript" src="theme/js/js-tab.js"></script>
+	<script type="text/javascript" src="theme/js/MSClass.js"></script>
+	<script type="text/javascript" src="theme/js/jcarousellite.js"></script>
+	<script type="text/javascript" src="theme/js/top.js"></script>
+    
+    
  </head>
  <body>
 
+<div>
+    <div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)"><div class="moquu_wxinh"></div></a></div>
+    <div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)" style="text-indent:0"><div class="moquu_wshareh"><img src="theme/icon/moquu_wshare.png" width="100%"></div></a></div>
+    <div id="moquu_wmaps"><a href="javascript:void(0)" class='moquu_wmaps'></a></div>
+    <a id="moquu_top" href="javascript:void(0)"></a>
+</div>
 <!--- header begin-->
 <header id="pc-header">
-    <div class="BHeader">
+   <div class="BHeader">
         <div class="yNavIndex">
             <ul class="BHeaderl">
-                <li><a href="#">登录</a> </li>
+                <li><a href="login.jsp" style="color:#ea4949;">请登录</a> </li>
                 <li class="headerul">|</li>
-                <li><a href="#">订单查询</a> </li>
+                <li><a href="register.jsp">免费注册</a> </li>
                 <li class="headerul">|</li>
-                <li><a href="#">我的收藏</a> </li>
+                <li><a href="my-d.jsp">订单查询</a> </li>
                 <li class="headerul">|</li>
-                <li id="pc-nav" class="menu"><a href="#" class="tit">我的商城</a>
+                <li><a href="my-s.jsp">我的收藏</a> </li>
+                <li class="headerul">|</li>
+                <li id="pc-nav" class="menu"><a href="my-user.html" class="tit">我的商城</a>
                     <div class="subnav">
-                        <a href="#">我的山城</a>
-                        <a href="#">我的山城</a>
-                        <a href="#">我的山城</a>
+                        <a href="my-d.html">我的订单</a>
+                        <a href="my-s.jsp">我的收藏</a>
+                        <a href="my-user.html">账户安全</a>
+                        <a href="my-add.html">地址管理</a>
+                        <a href="my-p.html">我要评价</a>
                     </div>
                 </li>
                 <li class="headerul">|</li>
-                <li><a href="#" class="M-iphone">手机悦商城</a> </li>
+                <li id="pc-nav1" class="menu"><a href="#" class="tit M-iphone">我有话对您说</a>
+                   <div class="subnav">
+                       <a href="#"><img src="theme/icon/ewm2.png" width="115" height="115" title="扫一扫，有惊喜！"></a>
+                   </div>
+                </li>
+                
+                <li class="headerul">|</li>
+                <div class="header-cart fr"><a href="#"><img src="theme/icon/car.png"></a> <i class="head-amount">99</i></div>
+       		 <div class="head-mountain"></div>
             </ul>
+            
         </div>
     </div>
     <div class="container clearfix">
@@ -55,7 +83,7 @@
                 <a href="#">服装城</a>
             </div>
         </div>
-        <div class="header-cart fr"><a href="#"><img src="theme/icon/car.png"></a> <i class="head-amount">99</i></div>
+        
         <div class="head-mountain"></div>
     </div>
     <div class="yHeader">
@@ -227,14 +255,9 @@
             <ul>
                 <li><a href="#">保障范围 </a> </li>
                 <li><a href="#">退货退款流程</a> </li>
-<<<<<<< HEAD
                 
                 
                 
-=======
-                <li><a href="#">服务中心</a> </li>
-                <li><a href="#"> 更多特色服务 </a> </li>
->>>>>>> branch 'master' of https://github.com/dheizhao/RentMarket.git
             </ul>
         </div>
         <div class="aui-footer-list clearfix">
@@ -244,14 +267,9 @@
             </h4>
             <ul>
                 <li><a href="#">退货退款流程</a> </li>
-<<<<<<< HEAD
                 <li><a href="#">服务中心 </a> </li>
                 
                
-=======
-                <li><a href="#">服务中心</a> </li>
-                <li><a href="#"> 更多特色服务 </a> </li>
->>>>>>> branch 'master' of https://github.com/dheizhao/RentMarket.git
             </ul>
         </div>
         <div class="aui-footer-list clearfix">
@@ -261,12 +279,8 @@
             </h4>
             <ul>
                 <li><a href="#">退货退款流程</a> </li>
-<<<<<<< HEAD
                
                
-=======
-                <li><a href="#">服务中心 </a> </li>
->>>>>>> branch 'master' of https://github.com/dheizhao/RentMarket.git
                 <li><a href="#"> 更多特色服务 </a> </li>
             </ul>
         </div>
@@ -289,28 +303,17 @@
         <div class="aui-footer-list clearfix">
             <h4>关于网站</h4>
             <ul>
-<<<<<<< HEAD
                 <li><a href="#">网站简介</a> </li>
              
                
-=======
-                <li><a href="#">退货退款流程</a> </li>
-                <li><a href="#">服务中心 </a> </li>
-                <li><a href="#"> 更多特色服务 </a> </li>
->>>>>>> branch 'master' of https://github.com/dheizhao/RentMarket.git
             </ul>
         </div>
         <div class="aui-footer-list clearfix">
             <h4>帮助中心</h4>
             <ul>
                 <li><a href="#">退货退款流程</a> </li>
-<<<<<<< HEAD
                 <li><a href="#">联系我们</a> </li>
                 
-=======
-                <li><a href="#">服务中心 </a> </li>
-                <li><a href="#"> 更多特色服务 </a> </li>
->>>>>>> branch 'master' of https://github.com/dheizhao/RentMarket.git
             </ul>
         </div>
         <div class="aui-footer-list clearfix">
@@ -318,14 +321,9 @@
             <ul>
                 
                 <li><a href="#">退货退款流程</a> </li>
-<<<<<<< HEAD
                 <li><a href="#">使用教程</a> </li>
                 <li><a href="#"> 联系客服购物 </a> </li>
                 
-=======
-                <li><a href="#">服务中心 </a> </li>
-                <li><a href="#"> 更多特色服务 </a> </li>
->>>>>>> branch 'master' of https://github.com/dheizhao/RentMarket.git
             </ul>
         </div>
     </div>
